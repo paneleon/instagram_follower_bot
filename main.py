@@ -77,9 +77,6 @@ class InstaFollower:
             self.driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", followers_window)
             sleep(2)
 
-        # this kinda worked
-        # followers_window = self.driver.find_element_by_xpath("//div[@Class='isgrP']//a")
-        # followers_window.send_keys(Keys.END)
 
     def follow(self):
         follow_buttons = self.driver.find_elements_by_css_selector("button.sqdOP")
